@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Weather.css";
 
-const API_KEY = "process.env.REACT_APP_WEATHER_API_KEY;";
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
 export default function Weather() {
   const [city, setCity] = useState("Toronto");
